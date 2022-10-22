@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/target/myapp-1.0-SNAPSHOT.jar myapp-1.0-SNAPSHOT.jar
+ENTRPOINT ["JAVA","-JAR","/myapp-1.0-SNAPSHOT.jar"]
